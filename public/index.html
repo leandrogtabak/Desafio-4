@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formularios Personas y Mascotas</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Ingresar nuevo producto -->
+      <h2>Nuevo producto</h2>
+      <form class="form" action="/api/productos" method="post">
+        <div class="field">
+          <label for="title">Titulo:</label>
+          <input type="text" name="title" class="titleProduct" />
+        </div>
+        <div class="field">
+          <label for="price">Precio:</label>
+          <input type="text" name="price" class="priceProduct" />
+        </div>
+        <div class="field">
+          <label for="thumbnail">Link imagen:</label>
+          <input type="text" name="thumbnail" class="thumbnailProduct" />
+        </div>
+        <div class="buttons">
+          <input class="send" type="submit" value="Enviar" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
