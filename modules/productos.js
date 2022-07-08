@@ -66,7 +66,7 @@ class Productos {
     const { id } = req.params;
 
     if (id >= 1 && id <= this.productos.length) {
-      productos.splice(id - 1, 1);
+      productos.splice(id - 1, 1, { error: 'producto inexistente' });
       res.status(201).send({ message: 'Deleted product OK' });
     } else {
       res.status(400).send({ error: 'producto no encontrado' });
